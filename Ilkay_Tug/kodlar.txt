@@ -1,0 +1,13 @@
+library(magick)
+library(hexSticker)
+library(showtext)
+font_add_google("Gochi Hand", "gochi")
+font_add_google("Pacifico", "glyph")
+font_add_google("Cutive Mono", "monospace") # ltsbase 
+image<-image_read("~/image.jpg")
+
+sticker<-sticker(image, package="Atatürk'ü Anma Gençlik ve Spor Bayramı Kutlu Olsun!",p_size=3.2,p_color="#777777",
+           h_color="#88398A",h_fill="white",
+           p_y=1.4,p_x=1,s_width=0.75,p_family="glyph",
+           s_x=1,s_y=1)
+print(sticker)
